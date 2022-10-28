@@ -1,0 +1,473 @@
+// Check all current databases in mongodb
+show dbs
+
+//Task 1:	Creating a Database
+
+// new database called "market" was created
+
+use("market");
+
+// Three collections or tables were added called customers, purchases and subscriptions
+
+// Customers collection created, with 20 documents inserted, no need to drop as I created it newly.
+use("market");
+db.customers.insertMany([
+ {
+   "CustomerID": 1000,
+   "FullName": "Abbie Moss",
+   "Age": 36,
+   "Gender": "Female",
+   "City": "Fairfield",
+   "State": "California",
+   "Country": "USA"
+ },
+ {
+   "CustomerID": 1001,
+   "FullName": "Beraun Kenneth",
+   "Age": 48,
+   "Gender": "Male",
+   "City": "Amarillo",
+   "State": "Texas",
+   "Country": "USA"
+ },
+ {
+   "CustomerID": 1002,
+   "FullName": "Acthony Koteles",
+   "Age": 47,
+   "Gender": "Male",
+   "City": "Inglewood",
+   "State": "California",
+   "Country": "USA"
+ },
+ {
+   "CustomerID": 1003,
+   "FullName": "Michael Lauser",
+   "Age": 16,
+   "Gender": "Male",
+   "City": "Nashville",
+   "State": "Tennessee",
+   "Country": "USA"
+ },
+ {
+   "CustomerID": 1004,
+   "FullName": "Nakada Richard",
+   "Age": 25,
+   "Gender": "Male",
+   "City": "West Covina",
+   "State": "California",
+   "Country": "USA"
+ },
+ {
+   "CustomerID": 1005,
+   "FullName": "Kaucher Robert",
+   "Age": 33,
+   "Gender": "Male",
+   "City": "Costa Mesa",
+   "State": "California",
+   "Country": "USA"
+ },
+ {
+   "CustomerID": 1006,
+   "FullName": "Steven Biondi",
+   "Age": 5,
+   "Gender": "Male",
+   "City": "Surprise",
+   "State": "Arizona",
+   "Country": "USA"
+ },
+ {
+   "CustomerID": 1007,
+   "FullName": "Manni Michael",
+   "Age": 43,
+   "Gender": "Male",
+   "City": "Denton",
+   "State": "Texas",
+   "Country": "USA"
+ },
+ {
+   "CustomerID": 1008,
+   "FullName": "Michael Glenna",
+   "Age": 24,
+   "Gender": "Male",
+   "City": "Stockton",
+   "State": "California",
+   "Country": "USA"
+ },
+ {
+   "CustomerID": 1009,
+   "FullName": "James Ecler",
+   "Age": 38,
+   "Gender": "Male",
+   "City": "Minneapolis",
+   "State": "Minnesota",
+   "Country": "USA"
+ },
+ {
+   "CustomerID": 1010,
+   "FullName": "Thomas Hawiey",
+   "Age": 50,
+   "Gender": "Male",
+   "City": "Daly City",
+   "State": "California",
+   "Country": "USA"
+ },
+ {
+   "CustomerID": 1011,
+   "FullName": "Paul Hostetler",
+   "Age": 21,
+   "Gender": "Male",
+   "City": "Visalia",
+   "State": "California",
+   "Country": "USA"
+ },
+ {
+   "CustomerID": 1012,
+   "FullName": "Wiqliam Lowhorn",
+   "Age": 40,
+   "Gender": "Male",
+   "City": "Pearland",
+   "State": "Texas",
+   "Country": "USA"
+ },
+ {
+   "CustomerID": 1013,
+   "FullName": "William Belles",
+   "Age": 48,
+   "Gender": "Male",
+   "City": "Stamford",
+   "State": "Connecticut",
+   "Country": "USA"
+ },
+ {
+   "CustomerID": 1014,
+   "FullName": "Anthony Actis",
+   "Age": 43,
+   "Gender": "Male",
+   "City": "Kent",
+   "State": "Washington",
+   "Country": "USA"
+ },
+ {
+   "CustomerID": 1015,
+   "FullName": "Edward Dimalanta",
+   "Age": 39,
+   "Gender": "Male",
+   "City": "Fremont",
+   "State": "California",
+   "Country": "USA"
+ },
+ {
+   "CustomerID": 1016,
+   "FullName": "Berning Ronald",
+   "Age": 16,
+   "Gender": "Male",
+   "City": "West Valley City",
+   "State": "Utah",
+   "Country": "USA"
+ },
+ {
+   "CustomerID": 1017,
+   "FullName": "Daniel Valme",
+   "Age": 50,
+   "Gender": "Male",
+   "City": "Springfield",
+   "State": "Illinois",
+   "Country": "USA"
+ },
+ {
+   "CustomerID": 1018,
+   "FullName": "Muskthel Michael",
+   "Age": 44,
+   "Gender": "Male",
+   "City": "Worcester",
+   "State": "Massachusetts",
+   "Country": "USA"
+ },
+ {
+   "CustomerID": 1019,
+   "FullName": "Bricn Daricek",
+   "Age": 52,
+   "Gender": "Male",
+   "City": "Overland Park",
+   "State": "Kansas",
+   "Country": "USA"
+ },
+ {
+   "CustomerID": 1020,
+   "FullName": "Donald Ham",
+   "Age": 21,
+   "Gender": "Male",
+   "City": "Sandy Springs",
+   "State": "Georgia",
+   "Country": "USA"
+ }
+]);
+
+// Purchases collection created, with 20 documents inserted
+use("market");
+db.subscriptions.insertMany([
+ {
+   "CustomerID": 1001,
+   "TotalSubscriptionAmount": 1696
+ },
+ {
+   "CustomerID": 1002,
+   "TotalSubscriptionAmount": 0
+ },
+ {
+   "CustomerID": 1003,
+   "TotalSubscriptionAmount": 2706
+ },
+ {
+   "CustomerID": 1004,
+   "TotalSubscriptionAmount": 1870
+ },
+ {
+   "CustomerID": 1005,
+   "TotalSubscriptionAmount": 1272
+ },
+ {
+   "CustomerID": 1006,
+   "TotalSubscriptionAmount": 1211
+ },
+ {
+   "CustomerID": 1007,
+   "TotalSubscriptionAmount": 4374
+ },
+ {
+   "CustomerID": 1008,
+   "TotalSubscriptionAmount": 520
+ },
+ {
+   "CustomerID": 1009,
+   "TotalSubscriptionAmount": 1819
+ },
+ {
+   "CustomerID": 1010,
+   "TotalSubscriptionAmount": 0
+ },
+ {
+   "CustomerID": 1011,
+   "TotalSubscriptionAmount": 453
+ },
+ {
+   "CustomerID": 1012,
+   "TotalSubscriptionAmount": 3551
+ },
+ {
+   "CustomerID": 1013,
+   "TotalSubscriptionAmount": 2982
+ },
+ {
+   "CustomerID": 1014,
+   "TotalSubscriptionAmount": 1386
+ },
+ {
+   "CustomerID": 1015,
+   "TotalSubscriptionAmount": 2761
+ },
+ {
+   "CustomerID": 1016,
+   "TotalSubscriptionAmount": 196
+ },
+ {
+   "CustomerID": 1017,
+   "TotalSubscriptionAmount": 5183
+ },
+ {
+   "CustomerID": 1018,
+   "TotalSubscriptionAmount": 1275
+ },
+ {
+   "CustomerID": 1019,
+   "TotalSubscriptionAmount": 6499
+ },
+ {
+   "CustomerID": 1020,
+   "TotalSubscriptionAmount": 227
+ }
+]);
+
+// Subscriptions collection created, with 20 documents inserted
+use("market");
+db.purchases.insertMany([
+ {
+   "CustomerID": 1000,
+   "RecentPurchaseDate": "20/01/2019",
+   "PurchaseCount": 4,
+   "TotalPurchase": 7846
+ },
+ {
+   "CustomerID": 1001,
+   "RecentPurchaseDate": "08/08/2017",
+   "PurchaseCount": 1,
+   "TotalPurchase": 90
+ },
+ {
+   "CustomerID": 1002,
+   "RecentPurchaseDate": "26/09/2022",
+   "PurchaseCount": 0,
+   "TotalPurchase": 0
+ },
+ {
+   "CustomerID": 1003,
+   "RecentPurchaseDate": "09/08/2017",
+   "PurchaseCount": 1,
+   "TotalPurchase": 47
+ },
+ {
+   "CustomerID": 1004,
+   "RecentPurchaseDate": "22/07/2018",
+   "PurchaseCount": 1,
+   "TotalPurchase": 209
+ },
+ {
+   "CustomerID": 1005,
+   "RecentPurchaseDate": "07/08/2018",
+   "PurchaseCount": 2,
+   "TotalPurchase": 167
+ },
+ {
+   "CustomerID": 1006,
+   "RecentPurchaseDate": "13/01/2019",
+   "PurchaseCount": 2,
+   "TotalPurchase": 311
+ },
+ {
+   "CustomerID": 1007,
+   "RecentPurchaseDate": "26/09/2022",
+   "PurchaseCount": 0,
+   "TotalPurchase": 0
+ },
+ {
+   "CustomerID": 1008,
+   "RecentPurchaseDate": "22/01/2019",
+   "PurchaseCount": 3,
+   "TotalPurchase": 388
+ },
+ {
+   "CustomerID": 1009,
+   "RecentPurchaseDate": "17/12/2018",
+   "PurchaseCount": 5,
+   "TotalPurchase": 588
+ },
+ {
+   "CustomerID": 1010,
+   "RecentPurchaseDate": "13/08/2018",
+   "PurchaseCount": 2,
+   "TotalPurchase": 437
+ },
+ {
+   "CustomerID": 1011,
+   "RecentPurchaseDate": "29/07/2018",
+   "PurchaseCount": 1,
+   "TotalPurchase": 92
+ },
+ {
+   "CustomerID": 1012,
+   "RecentPurchaseDate": "14/06/2017",
+   "PurchaseCount": 1,
+   "TotalPurchase": 246
+ },
+ {
+   "CustomerID": 1013,
+   "RecentPurchaseDate": "26/09/2022",
+   "PurchaseCount": 0,
+   "TotalPurchase": 0
+ },
+ {
+   "CustomerID": 1014,
+   "RecentPurchaseDate": "11/12/2018",
+   "PurchaseCount": 5,
+   "TotalPurchase": 10087
+ },
+ {
+   "CustomerID": 1015,
+   "RecentPurchaseDate": "17/01/2019",
+   "PurchaseCount": 3,
+   "TotalPurchase": 466
+ },
+ {
+   "CustomerID": 1016,
+   "RecentPurchaseDate": "21/07/2018",
+   "PurchaseCount": 1,
+   "TotalPurchase": 226
+ },
+ {
+   "CustomerID": 1017,
+   "RecentPurchaseDate": "26/01/2019",
+   "PurchaseCount": 4,
+   "TotalPurchase": 7875
+ },
+ {
+   "CustomerID": 1018,
+   "RecentPurchaseDate": "29/01/2019",
+   "PurchaseCount": 5,
+   "TotalPurchase": 619
+ },
+ {
+   "CustomerID": 1019,
+   "RecentPurchaseDate": "23/11/2018",
+   "PurchaseCount": 3,
+   "TotalPurchase": 351
+ },
+ {
+   "CustomerID": 1020,
+   "RecentPurchaseDate": "01/02/2019",
+   "PurchaseCount": 4,
+   "TotalPurchase": 534
+ }
+]);
+
+// Search for one of the documents passed on an index
+
+use("market");
+db.customers.find({ Gender: 'Male'}) 
+
+// Update a collection
+use("market");
+db.customers.updateOne({ CustomerID: 1020 },
+{
+  $set: {
+    Age: 38
+  }
+})
+
+// Check that the insert worked
+use("market");
+db.customers.find({ CustomerID: 1020 }) 
+
+
+// Delete a collection
+use("market");
+db.subscriptions.drop()
+
+use("market");
+db
+
+
+//Task 2:	Query Database
+
+// Uni database was installed with all the collections and their documents added using mongo shell or mongosh
+use("uni");
+
+// •	Find all the documents from the student collection which CourseID 4.
+use("uni");
+db.student.find({CourseID: 4})
+
+//•	Find all the documents from the student collection which CourseID 5 and Forenames is Joe.
+use("uni");
+db.student.find({ CourseID: 5, Forenames :'Joe' })
+
+//•	Find all the documents from the student collection which CourseID 5 or Firstname is Joe.
+use("uni");
+db.student.find({$or:[{ CourseID: 5}, {Forenames :'Joe' }]})
+
+// •	Find all documents from the application collection and sort by studentID.
+use("uni");
+db.application.find().sort({ StudentID: 1 })
+
+//•	In the class collection, count the number of LecturerID which is equal to 11.
+use("uni");
+db.class.find({ LecturerID: 11 }).count()
+
